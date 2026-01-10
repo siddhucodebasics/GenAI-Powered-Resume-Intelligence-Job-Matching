@@ -99,7 +99,6 @@ Exposes the system via REST endpoints:
 ---
 
 ## 📂 Project Structure
-
 Resume_Job_Matching/
 │
 ├── backend/
@@ -119,8 +118,6 @@ Resume_Job_Matching/
 ├── .env # API keys (not committed)
 ├── requirements.txt
 └── README.md
-
----
 
 ## API Usage
 
@@ -143,7 +140,8 @@ json
   "llm_explanation": "The candidate matches the role due to strong backend and frontend experience..."
 }
 
-Tech Stack
+
+##  Tech Stack
 Python
 FastAPI
 Sentence Transformers
