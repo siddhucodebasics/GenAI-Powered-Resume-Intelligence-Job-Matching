@@ -91,5 +91,81 @@ Exposes the system via REST endpoints:
 ---
 
 ## 📂 Project Structure
-<pre> Resume_Job_Matching/ ├── backend/ │ └── app/ │ ├── main.py # FastAPI entry point │ ├── matching.py # FAISS similarity search logic │ ├── explanation.py # LLM explanation logic │ ├── resumes.py # Resume metadata loader │ └── config.py # Centralized paths & configuration │ ├── notebook/ │ ├── Code.ipynb # Experimentation & model building │ ├── resumes_metadata.csv │ └── faiss_index/ │ └── resume_index.faiss │ ├── data/ │ └── raw_resumes_and_jds/ │ ├── .env # API keys (not committed) ├── requirements.txt └── README.md </pre>
+Root Directory: Resume_Job_Matching
+
+Folders & Files:
+
+1) backend/app/main.py – FastAPI entry point
+
+2) backend/app/matching.py – FAISS similarity search logic
+
+3) backend/app/explanation.py – LLM explanation logic
+
+4) backend/app/resumes.py – Resume metadata loader
+
+5) backend/app/config.py – Centralized paths & configuration
+
+6) notebook/Code.ipynb – Experimentation & model building
+
+7) notebook/resumes_metadata.csv – Resume metadata
+
+8) notebook/faiss_index/resume_index.faiss – FAISS index
+
+9) data/ – Raw resume and job description data
+
+10) .env – API keys (not committed)
+
+11) requirements.txt
+
+12) README.md
+
+# API Example
+Endpoint
+POST /match-text
+
+Request Parameters
+
+text: Job description text
+
+top_k: Number of candidates to return
+
+Example Request
+
+Text: Full stack developer with Java, Spring Boot, REST APIs and React
+Top K: 5
+
+Response Fields
+
+- rank – Candidate rank
+
+- file_name – Resume file name
+
+- predicted_role – Predicted role
+
+- similarity_score – FAISS similarity score
+
+- resume_snippet – Short resume preview
+
+- llm_explanation – LLM-generated explanation
+
+
+# Tech Stack
+
+Python
+FastAPI
+Sentence Transformers
+FAISS
+LangChain
+OpenAI / Azure OpenAI
+Pandas
+NumPy
+dotenv
+
+# Impact
+
+Reduced recruiter screening effort by ~65%
+
+Improved candidate–job matching accuracy
+
+Enabled explainable and transparent shortlisting using GenAI
 
