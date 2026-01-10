@@ -123,18 +123,18 @@ Folders & Files:
 Endpoint
 POST /match-text
 
-Request Parameters
+(Request Parameters)
 
 text: Job description text
 
 top_k: Number of candidates to return
 
-Example Request
+(Example Request)
 
 Text: Full stack developer with Java, Spring Boot, REST APIs and React
 Top K: 5
 
-Response Fields
+(Response Fields)
 
 - rank – Candidate rank
 
@@ -151,15 +151,15 @@ Response Fields
 
 # Tech Stack
 
-Python
-FastAPI
-Sentence Transformers
-FAISS
-LangChain
-OpenAI / Azure OpenAI
-Pandas
-NumPy
-dotenv
+- Python
+- FastAPI
+- Sentence Transformers
+- FAISS
+- LangChain
+- OpenAI / Azure OpenAI
+- Pandas
+- NumPy
+- dotenv
 
 # Impact
 
