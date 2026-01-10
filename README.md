@@ -91,24 +91,5 @@ Exposes the system via REST endpoints:
 ---
 
 ## 📂 Project Structure
-Resume_Job_Matching/
-├── backend/
-│   └── app/
-│       ├── main.py            # FastAPI entry point
-│       ├── matching.py        # FAISS similarity search logic
-│       ├── explanation.py     # LLM explanation logic
-│       ├── resumes.py         # Resume metadata loader
-│       └── config.py          # Centralized paths & configuration
-│
-├── notebook/
-│   ├── Code.ipynb             # Experimentation & model building
-│   ├── resumes_metadata.csv
-│   └── faiss_index/
-│
-├── data/
-│   └── raw_resumes_and_jds/
-│
-├── .env                       # API keys (not committed)
-├── requirements.txt
-└── README.md
+<pre> Resume_Job_Matching/ ├── backend/ │ └── app/ │ ├── main.py # FastAPI entry point │ ├── matching.py # FAISS similarity search logic │ ├── explanation.py # LLM explanation logic │ ├── resumes.py # Resume metadata loader │ └── config.py # Centralized paths & configuration │ ├── notebook/ │ ├── Code.ipynb # Experimentation & model building │ ├── resumes_metadata.csv │ └── faiss_index/ │ └── resume_index.faiss │ ├── data/ │ └── raw_resumes_and_jds/ │ ├── .env # API keys (not committed) ├── requirements.txt └── README.md </pre>
 
