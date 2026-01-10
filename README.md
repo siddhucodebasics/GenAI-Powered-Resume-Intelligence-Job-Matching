@@ -55,7 +55,6 @@ v
 |
 v
 Ranked Candidates + Explanation
-
 ---
 
 ## Component Breakdown
