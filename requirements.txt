@@ -1,0 +1,31 @@
+# Backend & API
+fastapi
+uvicorn
+
+# Data processing
+pandas
+numpy
+tqdm
+
+# Environment variables
+python-dotenv
+
+# NLP & embeddings
+sentence-transformers
+transformers
+torch
+
+# Vector search
+faiss-cpu
+
+# LLM & orchestration
+openai
+langchain
+langchain-openai
+
+# Document processing
+python-docx
+
+# Frontend
+streamlit
+requests
