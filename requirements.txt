@@ -25,6 +25,7 @@ langchain-openai
 
 # Document processing
 python-docx
+PyPDF2
 
 # Frontend
 streamlit
