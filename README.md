@@ -119,35 +119,31 @@ Folders & Files:
 
 12) README.md
 
-# API Example
-Endpoint
-POST /match-text
+## How to Run the Full Application (Recommended)
 
-(Request Parameters)
+This project consists of:
+- FastAPI backend (API + GenAI logic)
+- Streamlit frontend (Recruiter UI)
 
-text: Job description text
+### Step 1: Install dependencies
+pip install -r requirements.txt
 
-top_k: Number of candidates to return
+### Step 2: Configure environment variables
+Create a `.env` file in the project root:
 
-(Example Request)
+OPENAI_API_KEY=your_key_here
 
-Text: Full stack developer with Java, Spring Boot, REST APIs and React
-Top K: 5
+### Step 3: Start backend (Terminal 1)
+uvicorn backend.app.main:app --reload
 
-(Response Fields)
+Backend runs at:
+http://127.0.0.1:8000
 
-- rank – Candidate rank
+### Step 4: Start frontend (Terminal 2)
+streamlit run frontend/app.py
 
-- file_name – Resume file name
-
-- predicted_role – Predicted role
-
-- similarity_score – FAISS similarity score
-
-- resume_snippet – Short resume preview
-
-- llm_explanation – LLM-generated explanation
-
+Frontend runs at:
+http://localhost:8501
 
 # Tech Stack
 
